@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Website</title>
-  <style>
-    body { font-family: Arial; text-align: center; background: #f5f5f5; }
-    h1 { color: #2c3e50; }
-    p { color: #555; }
-  </style>
+ <meta charset="UTF-8">
+ <title>My Website</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+   /* Reset & Base Styles */
+   body {
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     background: #f5f5f5;
+     color: #333;
+   }
+   header {
+     background: #2c3e50;
+     color: white;
+     padding: 20px 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+     top: 0;
+   }
+   header h1 {
+     margin: 0;
+   }
+   nav a {
+     color: white;
+     margin-left: 20px;
+     text-decoration: none;
+     font-weight: bold;
+   }
+   nav a:hover {
+     text-decoration: underline;
+   }
+   .hero {
+     background: linear-gradient(to right, #6dd5ed, #2193b0);
+     color: white;
+     text-align: center;
+     padding: 100px 20px;
+   }
+   .hero h2 {
+     font-size: 2.5em;
+     margin-bottom: 10px;
+   }
+   .hero p {
+     font-size: 1.2em;
+     margin-bottom: 20px;
+   }
+   .hero button {
+     background: white;
+     color: #2193b0;
+     border: none;
+     padding: 15px 30px;
+     font-size: 1em;
+     font-weight: bold;
+     cursor: pointer;
+     border-radius: 5px;
+   }
+   .hero button:hover {
+     background: #eee;
+   }
+   .content {
+     padding: 50px 20px;
+     max-width: 1000px;
+     margin: auto;
+   }
+   .content h3 {
+     text-align: center;
+     margin-bottom: 20px;
+   }
+   .content p {
+     text-align: center;
+     line-height: 1.6;
+   }
+   footer {
+     background: #2c3e50;
+     color: white;
+     text-align: center;
+     padding: 20px;
+     margin-top: 40px;
+   }
+ </style>
 </head>
 <body>
-  <h1>Hello World 🌍</h1>
-  <p>Welcome to my first website!</p>
+ <header>
+   <h1>My Website</h1>
+   <nav>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Contact</a>
+   </nav>
+ </header>
+
+ <section class="hero">
+   <h2>Welcome to My Website 🌍</h2>
+   <p>This is a modern and simple design for your first site.</p>
+   <button onclick="alert('Thanks for visiting!')">Click Me</button>
+ </section>
+
+ <section class="content">
+   <h3>About This Page</h3>
+   <p>
+     This website was created with just HTML and CSS.
+     You can edit the text, colors, and layout to make it your own.
+     Add images, links, or even JavaScript to make it interactive.
+   </p>
+ </section>
+
+ <footer>
+   <p>© 2025 My Website | Built with ❤️</p>
+ </footer>
 </body>
 </html>
